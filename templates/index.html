@@ -46,8 +46,10 @@
                 <button class="btn btn-secondary mb-4" type="submit" id="submit">Submit</button>
                 {% with messages = get_flashed_messages() %}
                 {% if messages %}
-                <div>
-                    Form was submitted successfully
+                <div class="alert alert-success">
+                    {% for message in messages %}
+                    <p>{{ message }}</p>
+                    {% endfor %}
                 </div>
                 {% endif %}
                 {% endwith %}

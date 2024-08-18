@@ -36,7 +36,7 @@ def index():
                     email=email, date=date_obj, occupation=occupation)
         db.session.add(form)
         db.session.commit()
-        flash("Your form was submitted successfully!", "success")
+        flash(f"{first_name}, your form was submitted successfully!", "success")
 
     return render_template("index.html")
 

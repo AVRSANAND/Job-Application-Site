@@ -47,3 +47,17 @@ python app.py
 2. Open your browser and go to http://127.0.0.1:5001/.
 3. Fill out the form with your details and submit.
 4. Upon submission, a confirmation email will be sent to the email address provided.
+
+
+## File Structure
+- **app.py**: Main Flask application logic.
+- **templates/index.html**: HTML template for the job application form.
+- **data.db**: SQLite database where the form data is stored (auto-generated).
+
+## Example Form Data
+The application collects the following information:
+- **First Name**: User's first name.
+- **Last Name**: User's last name.
+- **Email**: User's email address.
+- **Available Start Date**: Date when the user can start the job.
+- **Occupation**: User's current occupation (employed, unemployed, self-employed, or student).
